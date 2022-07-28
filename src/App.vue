@@ -1,6 +1,6 @@
-<script setup lang="ts">
-import AButton from './components/AButton.vue';
-import AInput from './components/AInput.vue';
+<script setup>
+import AButton from './components/button/AButton.vue';
+import AInput from './components/input/AInput.vue';
 </script>
 
 <template>
