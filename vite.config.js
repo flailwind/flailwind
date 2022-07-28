@@ -8,7 +8,7 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, 'src/index.js'),
       name: 'flailwind',
-      fileName: 'flailwind',
+      fileName: format => `flailwind.${format}.js`,
     },
     rollupOptions: {
       external: 'vue',

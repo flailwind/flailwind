@@ -1,11 +1,19 @@
 {
   "name": "flailwind",
   "private": false,
-  "version": "0.0.2",
+  "version": "0.0.4",
   "license": "MIT",
-  "main": "dist/flailwind.umd.js",
-  "module": "dist/flailwind.esm.js",
-  "unpkg": "dist/flailwind.min.js",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/flailwind.umd.js",
+  "module": "./dist/flailwind.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/flailwind.es.js",
+      "require": "./dist/flailwind.umd.js"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/flailwind/flailwind.git"
